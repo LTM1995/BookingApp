@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BookingApp/static/css/main.5c66d483.css",
-    "main.js": "/BookingApp/static/js/main.7f8de007.js",
+    "main.js": "/BookingApp/static/js/main.63a38cf3.js",
     "static/js/787.ecb2d1a4.chunk.js": "/BookingApp/static/js/787.ecb2d1a4.chunk.js",
     "static/media/room.png": "/BookingApp/static/media/room.f27a964f80be39106936.png",
     "static/media/speaker_blue.svg": "/BookingApp/static/media/speaker_blue.b0b5240558e7a8c56a63d45b83845cc0.svg",
@@ -12,11 +12,11 @@
     "static/media/screen_yellow.svg": "/BookingApp/static/media/screen_yellow.558a08d54cbeb69cda6d57180a16eb7c.svg",
     "index.html": "/BookingApp/index.html",
     "main.5c66d483.css.map": "/BookingApp/static/css/main.5c66d483.css.map",
-    "main.7f8de007.js.map": "/BookingApp/static/js/main.7f8de007.js.map",
+    "main.63a38cf3.js.map": "/BookingApp/static/js/main.63a38cf3.js.map",
     "787.ecb2d1a4.chunk.js.map": "/BookingApp/static/js/787.ecb2d1a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c66d483.css",
-    "static/js/main.7f8de007.js"
+    "static/js/main.63a38cf3.js"
   ]
 }
