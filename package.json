@@ -1,7 +1,7 @@
 {
   "name": "cphb-bookingapp",
   "version": "0.1.0",
-  "homepage": "https://github.com/LTM1995/BookingApp",
+  "homepage": "https://ltm1995.github.io/BookingApp/",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
