@@ -6,7 +6,7 @@ export default function Dashboard(){
     return (
         <div>
             <h1>Booking Oversigt</h1>
-            <button className="knapLokale"><Link to="/roombooking">Book Lokale</Link> </button>
+            <button className="knapLokale"><Link to="/BookingApp/roombooking">Book Lokale</Link> </button>
             <YourBookings />
         </div>
     )
