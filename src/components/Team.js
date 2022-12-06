@@ -1,14 +1,22 @@
 
 import Select from "react-select"
-import React, { useState } from "react"
+import { useState } from "react"
+import useFetch from "../useFetch";
 
-export default function Team ({data}){
+const urlT = "https://bookingapp-6759a-default-rtdb.firebaseio.com/teams.json"
+export default function Team (){
+    const {data, loading, error} = useFetch(urlT)
     const [selectedOptions, setSelectedOptions] = useState();
-    const optionList = [
-        { value: "Mul1 Hold A", label: "Mul1 Hold A"},
-        { value: "Mul2 Hold B", label: "Mul2 Hold B"},
-        { value: "Mul3 Hold C", label: "Mul3 Hold C"}
-    ];
+    
+    if (loading) return <h1> LOADING...</h1>;
+    if (error) console.log(error);
+    console.log(data);
+    const optionList = data.map(team=>(  [{value: team.capacity, label: team.id}]));
+   
+    
+    
+    
+    
     function handleSelect(data) {
         setSelectedOptions(data);
     }
