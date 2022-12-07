@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 
 const urlR = "https://bookingapp-6759a-default-rtdb.firebaseio.com/rooms.json"
-export default function RoomComponent({date}){
+export default function RoomComponent({date, existingBookingId}){
     const {data, loading, error} = useFetch(urlR)
     if (loading) return <h1> LOADING...</h1>;
     if (error) console.log(error); 
@@ -20,7 +20,7 @@ export default function RoomComponent({date}){
             <div className="imgContainer">
                 <h2>Lokale #{room.name}</h2>
                 <h3>Etage:{room.floor}</h3>
-                <BookBtn date={date} room={room} />
+                <BookBtn date={date} room={room} existingBookingId={existingBookingId} />
                 <img className="iconRoom"src= {iconRoom}/>
             </div>
             <div className="iconContainer">

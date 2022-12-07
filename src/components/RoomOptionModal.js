@@ -2,14 +2,14 @@
 import { useState } from "react"
 import BookingModalCard from "./BookingModalCard"
 
-export default function Modal({date, closeModal}) {
+export default function Modal({date, closeModal, existingBookingId}) {
     return (
         
             <div className="modalContainer">
                 <div className="closeBtnModal">
                     <button onClick={() => closeModal(false)}>X</button>
                 </div>
-                <BookingModalCard date={date}/>
+                <BookingModalCard date={date} existingBookingId={existingBookingId}/>
             </div>
     
     )
