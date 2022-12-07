@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Modal from "./RoomOptionModal"
 
-export default function Searchbtn(){
+export default function Searchbtn({date}){
     const [openModal, setOpenModal] = useState(false);
     return (
         <>
@@ -13,7 +13,7 @@ export default function Searchbtn(){
         >
             Søg
         </button>
-        {openModal && <Modal closeModal={setOpenModal}/>}
+        {openModal && <Modal date={date} closeModal={setOpenModal}/>}
         </>
     )
 }

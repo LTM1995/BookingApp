@@ -1,7 +1,7 @@
 
 import Select from "react-select"
 import { useState } from "react"
-import useFetch from "../useFetch";
+import useFetch from "../API/useFetch";
 
 const urlT = "https://bookingapp-6759a-default-rtdb.firebaseio.com/teams.json"
 export default function Team (){
@@ -11,7 +11,11 @@ export default function Team (){
     if (loading) return <h1> LOADING...</h1>;
     if (error) console.log(error);
     console.log(data);
-    const optionList = data.map(team=>(  [{value: team.capacity, label: team.id}]));
+    const optionList = data.map(team=> {
+        return {
+            value: team.capacity, 
+            label: team.id
+        }});
    
     
     

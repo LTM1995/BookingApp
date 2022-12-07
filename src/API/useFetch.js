@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { transformToArray } from "./firebase-utils";
+import { transformToArray } from "../firebase-utils";
 
 function useFetch(url) {
     const [data, setData] = useState([]);

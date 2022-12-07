@@ -1,15 +1,17 @@
-import YourBookings from "./YourBookings";
+import YourBookings from "../components/YourBookings";
 import { Link } from "react-router-dom";
 import "../App.css";
 import { useState, useEffect } from "react";
 
-export default function Dashboard(){
 
+export default function Dashboard(){
+    
+       
     return (
-        <div>
+        <div className="RoomBookingContainer">
             <div>
                 <h1>Booking Oversigt</h1>
-                <button className="knapLokale"><Link to="/BookingApp/roombooking">Book Lokale</Link> </button>
+                <Link to="/BookingApp/roombooking"><button className="openModalBtn">Book Lokale</button></Link>
             
             </div>
             <div>
