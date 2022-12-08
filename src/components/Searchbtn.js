@@ -2,7 +2,7 @@
 import { useState } from "react"
 import Modal from "./RoomOptionModal"
 
-export default function Searchbtn({date}){
+export default function Searchbtn({date, existingBookingId}){
     const [openModal, setOpenModal] = useState(false);
     return (
         <>
@@ -13,7 +13,7 @@ export default function Searchbtn({date}){
         >
             Søg
         </button>
-        {openModal && <Modal date={date} closeModal={setOpenModal}/>}
+        {openModal && <Modal date={date} existingBookingId={existingBookingId} closeModal={setOpenModal}/>}
         </>
     )
 }

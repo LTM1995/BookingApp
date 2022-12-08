@@ -1,22 +1,12 @@
+import {Link} from "react-router-dom"
 
-
-export default function EditBtn({id}){
-    const handleEdit = async (e) => {
-        e.preventDefault();
-
-        const requestOptions = {
-            method: 'PUT',
-            body: JSON.stringify(id)
-        };
-        fetch (`https://bookingapp-6759a-default-rtdb.firebaseio.com/bookings/${id}.json`, requestOptions)
-        .then(response => response.json())
-        .then(data => this.setState({ editId: data.id}));        
-}
+export default function EditBtn({id, date}){
+    
 
 
 return (
     <div>
-        <button onClick={handleEdit} className="openModalBtn">Ændre</button>
+        <button className="openModalBtn"><Link to ="/BookingApp/roombooking" state={{pickedDate: date, existingBookingId: id}}>Ændre</Link></button>
     </div>
 )
 

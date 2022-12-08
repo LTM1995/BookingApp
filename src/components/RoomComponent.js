@@ -7,13 +7,8 @@ import BookBtn from "./BookBtn"
 
 
 const urlR = "https://bookingapp-6759a-default-rtdb.firebaseio.com/rooms.json"
-<<<<<<< Updated upstream
-export default function RoomComponent({date}){
-    const {data, loading, error} = useFetch(urlR)
-=======
 export default function RoomComponent({date, existingBookingId}){
-    const {data, loading, error, retriggerGetData} = useFetch(urlR)
->>>>>>> Stashed changes
+    const {data, loading, error} = useFetch(urlR)
     if (loading) return <h1> LOADING...</h1>;
     if (error) console.log(error); 
     
@@ -24,13 +19,8 @@ export default function RoomComponent({date, existingBookingId}){
             <div className="imgContainer">
                 <h2>Lokale #{room.name}</h2>
                 <h3>Etage:{room.floor}</h3>
-<<<<<<< Updated upstream
-                <BookBtn date={date} room={room} />
-                <img className="iconRoom"src= {iconRoom}/>
-=======
-                <BookBtn date={date} room={room} retriggerFetch={retriggerGetData} existingBookingId={existingBookingId} />
+                <BookBtn date={date} room={room} existingBookingId={existingBookingId} />
                 <img className="iconRoom"src= {iconRoom} alt="Baggrundsbillede af klasselokale"/>
->>>>>>> Stashed changes
             </div>
             <div className="iconContainer">
                 <img src={iconProjector} alt="Projectorikon"/>

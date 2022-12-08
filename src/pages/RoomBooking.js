@@ -6,13 +6,9 @@ import "../App.css"
 import { useState } from "react";
 import Calendar from "react-calendar"
 import 'react-calendar/dist/Calendar.css'
+import {useLocation} from "react-router-dom";
 
 export default function RoomBooking(){
-<<<<<<< Updated upstream
-    const [date,setDate] = useState (new Date());
-    const onChange = date => {
-        setDate(date);
-=======
     // Vi bruger useLocation hooken til at hive state ud fra Link som passer state værdierne pickedDate og exisitingBookingId fra editButton
     const location = useLocation();
 
@@ -39,7 +35,6 @@ export default function RoomBooking(){
         }
 
         setDate(input);
->>>>>>> Stashed changes
     };
 
     return (
@@ -48,11 +43,11 @@ export default function RoomBooking(){
             <Team />
             <div>
             
-            <Calendar className="calendar" onChange={onChange} value={date} />
+            <Calendar className="calendar" onChange={onChange} value={pickedDate ? pickedDate: date} />
         </div>
             <Time />
             <RoomInventory />
-            <Searchbtn date={date}/>
+            <Searchbtn date={date} existingBookingId={existingBookingId}/>
         </div>
     )
 }

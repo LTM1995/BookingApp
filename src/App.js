@@ -1,10 +1,8 @@
 import './App.css';
-import { getDatabase, ref, set } from 'firebase/database';
-import { uid } from "uid"
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Dashboard from "./pages/Dashboard"
 import RoomBooking from "./pages/RoomBooking"
-import React, { useState } from "react"
+
 
 
 
