@@ -22,7 +22,15 @@ h1, h2, h3 {
   padding: 20px 0;
 }
 .RoomBookingContainer h1 {
-  margin-left: 37px;
+  margin-left: 35px;
+}
+#dashUnderTitle {
+  margin-left: 35px;
+}
+
+#dashBookBtn {
+  margin-left: 35px;
+  margin-top: 30px;
 }
 
 .dropdown-container {
@@ -102,11 +110,18 @@ h1, h2, h3 {
   margin-bottom: 38px;
   font-size: 15px;
   color: #fff;
+  text-shadow: 1px 1px 0px #c0770c;
 }
 .openModalBtn a {
   text-decoration: none;
   color: #1e2e58;
   font-weight: 700;
+  display: block;
+  width: 100%;
+  height: inherit;
+  line-height: 39px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #c0770c;
 }
 
 
@@ -182,12 +197,26 @@ h1, h2, h3 {
 
 .yourBookingsCard {
   background-color: white;
-  margin: 20px;
+  margin: 35px;
   border-radius: 5px;
   padding: 20px;
+  width: 322px;
 }
 .yourBookingsCard h3 {
   color: #1e2e58;
+  padding: 5px 0;
+}
+#floorTitle {
+  margin-bottom: 30px;
+}
+
+.yourBookingsCard button {
+  margin-left: 100px;
+
+}
+.yourBookingsCard img {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .cancelBtn {
@@ -202,6 +231,7 @@ h1, h2, h3 {
   margin-bottom: 38px;
   font-size: 15px;
   color: #fff;
+  text-shadow: 1px 1px 0px #0a1339;
 }
 
 

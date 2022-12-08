@@ -1,5 +1,3 @@
-
-import { useState } from "react"
 import BookingModalCard from "./BookingModalCard"
 
 export default function Modal({date, closeModal}) {

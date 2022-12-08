@@ -10,7 +10,6 @@ export default function Team (){
     
     if (loading) return <h1> LOADING...</h1>;
     if (error) console.log(error);
-    console.log(data);
     const optionList = data.map(team=> {
         return {
             value: team.capacity, 
